@@ -37,10 +37,7 @@ export default function CountryScreen(props) {
 				<InfoItem title="Population" value={item.population} />
 			</Highlights>
 			<div className="languages">
-				<span>Languages spoken: </span>
-				{languages.map((lang) => (
-					<span>{lang}</span>
-				))}
+				<span>Languages spoken: {languages.join(",")} </span>
 			</div>
 			<div className="borders">
 				<span>Surrounded by: {borders.join(",")} </span>
